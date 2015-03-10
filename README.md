@@ -13,7 +13,7 @@
 npm install
 ```
 
-##### run server
+##### run server (app wilil be running at localhost:3000/v1)
 ```
 gulp serve
 ```
