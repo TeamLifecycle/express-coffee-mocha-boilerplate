@@ -1,7 +1,7 @@
 express = require 'express'
 router = express.Router()
 
-homeController = require "../v1/controllers/home"
+homeController = require "./controllers/home"
 
 router.get '/', homeController.index
 
