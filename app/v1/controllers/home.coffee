@@ -1,5 +1,4 @@
 homeController = {}
-Nightmare = require 'nightmare'
 fs = require 'fs'
 
 homeController.index = (req, res) ->

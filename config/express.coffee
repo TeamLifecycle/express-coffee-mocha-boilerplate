@@ -8,6 +8,7 @@ bodyParser = require 'body-parser'
 compress = require 'compression'
 methodOverride = require 'method-override'
 exphbs  = require 'express-handlebars'
+expressValidator = require 'express-validator'
 
 v1 = require '../app/v1/routes'
 
@@ -26,6 +27,7 @@ module.exports = (app, config) ->
   app.use bodyParser.urlencoded(
     extended: true
   )
+  app.use expressValidator()
   app.use cookieParser()
   app.use compress()
   app.use express.static config.root + '/public'
