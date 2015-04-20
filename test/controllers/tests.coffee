@@ -1,4 +1,4 @@
-{Article, request} = require '../vars'
+{request} = require '../vars'
 
 it "birds should fly", ->
 	1.should.equal 1
@@ -13,13 +13,13 @@ describe 'requesting root page', ->
 			done()
 
 
-describe 'ensuring database working', ->
+# describe 'ensuring database working', ->
 
-	it 'test should respond with a 200', (done) ->
-		# this is created in before.coffee
-		# and destroyed in after.coffee
-		Article.findOne
-			title: "Testy Mctesterson"
-		, (err, article) ->
-			article.should.exist
-			done()
+# 	it 'test should respond with a 200', (done) ->
+# 		# this is created in before.coffee
+# 		# and destroyed in after.coffee
+# 		Article.findOne
+# 			title: "Testy Mctesterson"
+# 		, (err, article) ->
+# 			article.should.exist
+# 			done()
